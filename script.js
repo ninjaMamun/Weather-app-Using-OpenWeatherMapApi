@@ -11,7 +11,6 @@ document.getElementById("submitBtn").addEventListener('click', function () {
             document.getElementById("weatherImg").src = "https://openweathermap.org/img/wn/02d@2x.png";
             let weatherImg = data['weather'][0]['icon'];
             document.getElementById("weatherImg").src = 'https://openweathermap.org/img/wn/' + weatherImg + '@2x.png';
-            console.log(data);
         })
 })
 
@@ -25,6 +24,5 @@ function defaultCity() {
             document.getElementById("skyStatus").innerText = data['weather'][0]['description'];
             let weatherImg = data['weather'][0]['icon'];
             document.getElementById("weatherImg").src = 'https://openweathermap.org/img/wn/' + weatherImg + '@2x.png';
-            console.log(data);
         })
 }
